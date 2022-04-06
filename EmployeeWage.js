@@ -1,5 +1,5 @@
 /*
-Store the Daily Wage along with the Total Wage - Save in an Array the Daily Wage
+Store the Daily Wage along with the Total Wage - Save in an Array the Daily Wage ..
 */
 const IS_ABSENT = 0 ;
 const IS_PART_TIME = 1 ;
@@ -40,5 +40,5 @@ while(totalEmpHrs <= MAX_HRS_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
 }
 
 let empWage = calcDailyWage(totalEmpHrs);
-console.log(" UC6- Total Days: " + totalWorkingDays + "Total Hrs: " +totalEmpHrs+ " Emp Wage: " + empWage);
+console.log(" UC6-Total Days: " +totalWorkingDays+ " Total Hrs: " +totalEmpHrs+ " Emp Wage: " + empWage);
  
