@@ -104,3 +104,12 @@ console.log("UC 7G - Number of Days Emp Worked :"+ empDailyWageArr.reduce(totalD
 
 //UC8A
         console.log("UC8 - Emp Wage Map totalHrs : " + Array.from(empDailyWageMap.values() ).reduce(totalWages, 0) );
+        const findTotal = (totalVal, dailyVal) => {
+      return totalVal + dailyVal;
+}
+//Uc9
+let count = 0;
+let totalHours = Array.from(empDailyHrsMap.values()).reduce(findTotal, 0);
+let totalSalary = empDailyWageArr.filter(dailyWage => dailyWage > 0).reduce(findTotal, 0);
+
+console.log("UC9 - Emp Wage with Arrow.: " + "Total Hours: " + totalHours + "Total Wages: " + totalSalary);
